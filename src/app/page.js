@@ -8,7 +8,7 @@ export default function Home() {
   const router = useRouter();
 
   const predictionFunc = () => {
-    router.push(`/prediction/${name}`);
+    router.push(`/${name}`);
   }
 
 
