@@ -36,11 +36,13 @@ const Page = async ({ params }) => {
     ])
 
     return (
-        <>
-            <div>Age :  {age.age}</div>
-            <div>Gender : {gender.gender}</div>
-            <div>Country : {country.country[0].country_id}</div>
-        </>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "100vh" }}>
+            <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", gap: "25px", fontSize: "20px", padding: "50px", backgroundColor: "black", color: "white", width: "30%", height: "300px", borderRadius: "10px" }}>
+                <div>Age :  {age.age}</div>
+                <div>Gender : {gender.gender}</div>
+                <div>Country : {country.country[0].country_id}</div>
+            </div>
+        </div>
     )
 }
 

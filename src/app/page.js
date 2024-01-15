@@ -21,7 +21,7 @@ export default function Home() {
         </div>
         <div style={{ display: "flex", gap: "20px" }}>
           <input type="text" value={name} placeholder="Write your name..." style={{ outline: "none", padding: "10px" }} onChange={(e) => setName(e.target.value)} ></input>
-          <button style={{ textDecoration: "none", color: "black", padding: "10px" }} onClick={predictionFunc} >PREDICT</button>
+          <button style={{ textDecoration: "none", color: "black", padding: "10px", backgroundColor: "white", border: "none", cursor: "pointer", borderRadius: "2px", fontWeight: "bold" }} onClick={predictionFunc} >PREDICT</button>
         </div>
       </div>
     </div>
